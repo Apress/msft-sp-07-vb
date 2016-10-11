@@ -1,0 +1,15 @@
+<membership defaultProvider="LDAP">
+ <providers>
+  <add name="LDAP"
+    type="Microsoft.Office.Server.Security.LDAPMembershipProvider,~CCC
+      Microsoft.Office.Server, Version=12.0.0.0, Culture=neutral,~CCC
+      PublicKeyToken=71E9BCE111E9429C" 
+    server="VSPDC" port="389"
+    useSSL="false" userDNAttribute="distinguishedName"
+    userNameAttribute="sAMAccountName"
+    userContainer="CN=Users,DC=domain,DC=local"
+    userObjectClass="person"
+    userFilter="(|(ObjectCategory=group)(ObjectClass=person))" scope="Subtree"
+    otherRequiredUserAttributes="sn,givenname,cn" />
+ </providers>
+</membership>

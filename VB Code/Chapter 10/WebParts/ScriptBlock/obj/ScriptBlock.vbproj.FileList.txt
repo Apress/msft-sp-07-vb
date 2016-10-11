@@ -1,0 +1,9 @@
+bin\Debug\ScriptBlock.dll
+bin\Debug\ScriptBlock.pdb
+bin\Debug\ScriptBlock.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ScriptBlock.Resources.resources
+obj\Debug\ScriptBlock.vbproj.GenerateResource.Cache
+obj\Debug\ScriptBlock.dll
+obj\Debug\ScriptBlock.xml
+obj\Debug\ScriptBlock.pdb

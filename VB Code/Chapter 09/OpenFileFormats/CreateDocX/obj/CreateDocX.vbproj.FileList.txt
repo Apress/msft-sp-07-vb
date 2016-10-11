@@ -1,0 +1,9 @@
+bin\Debug\CreateDocX.exe
+bin\Debug\CreateDocX.pdb
+bin\Debug\CreateDocX.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CreateDocX.Resources.resources
+obj\Debug\CreateDocX.vbproj.GenerateResource.Cache
+obj\Debug\CreateDocX.exe
+obj\Debug\CreateDocX.xml
+obj\Debug\CreateDocX.pdb

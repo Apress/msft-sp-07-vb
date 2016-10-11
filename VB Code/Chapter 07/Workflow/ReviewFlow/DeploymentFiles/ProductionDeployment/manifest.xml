@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--  Manifest for a solution package (wsp).  To customize:
+1) Replace NEW_GUID with a unique GUID
+2) Replace "MyFeature" with the name of your own feature
+3) Replace "MyTarget" with the name of your own target
+-->
+
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="NEW_GUID" >
+  <Assemblies>
+    <Assembly DeploymentTarget="GlobalAssemblyCache" Location="MyTarget.dll" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="MyFeature\Feature.xml"/>
+  </FeatureManifests>
+</Solution>

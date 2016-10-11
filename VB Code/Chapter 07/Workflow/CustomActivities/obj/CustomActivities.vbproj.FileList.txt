@@ -1,0 +1,9 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CustomActivities.Resources.resources
+obj\Debug\CustomActivities.vbproj.GenerateResource.Cache
+bin\Debug\CustomActivities.dll
+bin\Debug\CustomActivities.pdb
+bin\Debug\CustomActivities.xml
+obj\Debug\CustomActivities.dll
+obj\Debug\CustomActivities.xml
+obj\Debug\CustomActivities.pdb

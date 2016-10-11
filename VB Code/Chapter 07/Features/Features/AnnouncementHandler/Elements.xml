@@ -1,0 +1,22 @@
+﻿<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Receivers ListTemplateId="104">
+		<Receiver>
+			<Name>AnnouncementAddHandler</Name>
+			<Type>ItemAdding</Type>
+			<SequenceNumber>1000</SequenceNumber>
+			<Assembly>
+				AnnouncementHandler, Version=1.0.0.0, Culture=neutral,PublicKeyToken=8c9fc716f38d08b2
+			</Assembly>
+			<Class>AnnouncementHandler.Processor</Class>
+		</Receiver>
+		<Receiver>
+			<Name>AnnouncementDeleteHandler</Name>
+			<Type>ItemDeleting</Type>
+			<SequenceNumber>2000</SequenceNumber>
+			<Assembly>
+				AnnouncementHandler, Version=1.0.0.0, Culture=neutral,PublicKeyToken=8c9fc716f38d08b2
+			</Assembly>
+			<Class>AnnouncementHandler.Processor</Class>
+		</Receiver>
+	</Receivers>
+</Elements>

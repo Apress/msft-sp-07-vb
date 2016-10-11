@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<CustomAction Id="UserInterfaceLightUp.ECBItemToolbar"
+	  RegistrationType="List"
+	  RegistrationId="101"
+	  Location="EditControlBlock"
+	  Sequence="106"
+	  Title="Cleanse Document"
+	  ImageUrl="/_layouts/images/AddToFavorites.gif">
+		<UrlAction Url="/_layouts/Worker.aspx?Item={ItemUrl}" />
+	</CustomAction>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/"
+		 Id="BAF0C4A7-C707-47d2-809B-8130BC344048"
+		 Scope="Site"
+		 Title="Download Book Code"
+		 Description="A feature to open the code download page on Apress." 
+		 >
+	<ElementManifests>
+		<ElementManifest Location="Elements.xml" />
+	</ElementManifests>
+</Feature>

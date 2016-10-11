@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature Title="Word Document Cleaner"
+    Description="Accepts changes and removes comments from Word 2007 files." 
+    Scope="Site"
+    Id="C67EBE69-0372-425f-A939-23F8A74418AF"
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ElementManifests>
+		<ElementManifest Location="Elements.xml" />
+	</ElementManifests>
+</Feature>

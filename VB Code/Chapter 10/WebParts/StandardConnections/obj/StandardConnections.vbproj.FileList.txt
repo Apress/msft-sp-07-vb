@@ -1,0 +1,9 @@
+bin\Debug\StandardConnections.dll
+bin\Debug\StandardConnections.pdb
+bin\Debug\StandardConnections.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\StandardConnections.Resources.resources
+obj\Debug\StandardConnections.vbproj.GenerateResource.Cache
+obj\Debug\StandardConnections.dll
+obj\Debug\StandardConnections.xml
+obj\Debug\StandardConnections.pdb

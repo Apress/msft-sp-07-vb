@@ -1,0 +1,11 @@
+bin\Debug\AnnouncementHandler.dll
+bin\Debug\AnnouncementHandler.pdb
+bin\Debug\AnnouncementHandler.xml
+bin\Debug\Microsoft.SharePoint.Search.dll
+bin\Debug\Microsoft.SharePoint.Search.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\AnnouncementHandler.Resources.resources
+obj\Debug\AnnouncementHandler.vbproj.GenerateResource.Cache
+obj\Debug\AnnouncementHandler.dll
+obj\Debug\AnnouncementHandler.xml
+obj\Debug\AnnouncementHandler.pdb

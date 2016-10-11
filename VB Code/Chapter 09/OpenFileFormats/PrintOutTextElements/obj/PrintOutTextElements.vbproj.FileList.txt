@@ -1,0 +1,9 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\PrintOutTextElements.Resources.resources
+obj\Debug\PrintOutTextElements.vbproj.GenerateResource.Cache
+bin\Debug\PrintOutTextElements.exe
+bin\Debug\PrintOutTextElements.pdb
+bin\Debug\PrintOutTextElements.xml
+obj\Debug\PrintOutTextElements.exe
+obj\Debug\PrintOutTextElements.xml
+obj\Debug\PrintOutTextElements.pdb

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://litwareserver:2401/_vti_bin/excelservice.asmx?wsdl" filename="excelservice.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://litwareserver:2401/_vti_bin/excelservice.asmx?disco" filename="excelservice.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

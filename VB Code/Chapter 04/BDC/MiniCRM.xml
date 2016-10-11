@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<LobSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation=
+ "http://schemas.microsoft.com/office/2006/03/BusinessDataCatalog BDCMetadata.xsd"
+ SystemUtility=
+ "Microsoft.Office.Server.ApplicationRegistry.SystemSpecific.Db.DbSystemUtility,
+ Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral,
+ PublicKeyToken=71e9bce111e9429c"
+ ConnectionManager=
+ "Microsoft.Office.Server.ApplicationRegistry.SystemSpecific.Db.DbConnectionManager,
+ Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral,
+ PublicKeyToken=71e9bce111e9429c"
+ EntityInstance=
+ "Microsoft.Office.Server.ApplicationRegistry.SystemSpecific.Db.DbEntityInstance,
+ Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral,
+ PublicKeyToken=71e9bce111e9429c" Version="1.0.0.0" Name="MiniCRM"
+ xmlns="http://schemas.microsoft.com/office/2006/03/BusinessDataCatalog">
+
+    <Properties>
+      <Property Name="WildcardCharacter" Type="System.String">%</Property>
+    </Properties>
+
+  <LobSystemInstances>
+    <LobSystemInstance Name="ContactInfo">
+      <Properties>
+        <Property Name="AuthenticationMode"
+          Type="System.String">PassThrough</Property>
+        <Property Name="DatabaseAccessProvider"
+          Type="System.String">SqlServer</Property>
+        <Property Name="RdbConnection Data Source"
+          Type="System.String">VSSQL</Property>
+        <Property Name="RdbConnection Initial Catalog"
+          Type="System.String">MiniCRM</Property>
+        <Property Name="RdbConnection Integrated Security"
+          Type="System.String">SSPI</Property>
+        <Property Name="NumberOfConnections" Type="System.Int32">-1</Property>
+      </Properties>
+    </LobSystemInstance>
+  </LobSystemInstances>
+
+  <Entities>
+    <Entity EstimatedInstanceCount="10000" Name="Customer">
+
+      <Identifiers>
+        <Identifier Name="CustomerID" TypeName="System.Int32" />
+      </Identifiers>
+
+      <Methods>
+        <Method Name="FindCustomers">
+
+          <Properties>
+            <Property Name="Title" Type="System.String">LastName</Property>
+            <Property Name="RdbCommandType" Type="System.Data.CommandType,
+              System.Data, Version=2.0.0.0, Culture=neutral,
+              PublicKeyToken=b77a5c561934e089">Text</Property>
+            <Property Name="RdbCommandText" Type="System.String">
+              SELECT * FROM Names WHERE Lastname LIKE @LastName</Property>
+          </Properties>
+
+          <FilterDescriptors>
+            <FilterDescriptor Type="Wildcard" Name="LastName"/>
+          </FilterDescriptors>
+
+          <Parameters>
+            <Parameter Direction="In" Name="@LastName">
+              <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0,
+                Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                Name="LastName" AssociatedFilter="LastName" />
+            </Parameter>
+            <Parameter Direction="Return"
+              TypeReflectorTypeName=
+    "Microsoft.Office.Server.ApplicationRegistry.SystemSpecific.Db.DbTypeReflector"
+     Name="Customers">
+              <TypeDescriptor TypeName="System.Data.IDataReader, System.Data,
+                Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                IsCollection="true" Name="CustomerDataReader">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="System.Data.IDataRecord, System.Data,
+                    Version=2.0.0.0, Culture=neutral,
+                    PublicKeyToken=b77a5c561934e089" Name="CustomerDataRecord">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.Int32, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="ID"
+                        IdentifierName="CustomerID" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="FirstName" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="LastName" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="Title" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="Company" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="Address1" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                         Version=2.0.0.0, Culture=neutral,
+                         PublicKeyToken=b77a5c561934e089" Name="Address2" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="City" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="State" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="Zip" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="Phone" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="Fax" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="EMail" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+
+          <MethodInstances>
+            <MethodInstance Type="Finder" ReturnParameterName="Customers"
+              ReturnTypeDescriptorName="CustomerDataReader"
+              ReturnTypeDescriptorLevel="0" Name="FindCustomersInstance" />
+          </MethodInstances>
+        </Method>
+
+        <Method Name="FindCustomer">
+
+          <Properties>
+            <Property Name="Title" Type="System.String">ID</Property>
+            <Property Name="RdbCommandType" Type="System.Data.CommandType,
+              System.Data, Version=2.0.0.0, Culture=neutral,
+              PublicKeyToken=b77a5c561934e089">Text</Property>
+            <Property Name="RdbCommandText" Type="System.String">
+              SELECT * FROM Names WHERE ID=@ID</Property>
+          </Properties>
+
+          <FilterDescriptors>
+            <FilterDescriptor Type="Comparison" Name="ID"/>
+          </FilterDescriptors>
+
+          <Parameters>
+            <Parameter Direction="In" Name="@ID">
+              <TypeDescriptor TypeName="System.Int32, mscorlib, Version=2.0.0.0,
+                Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                Name="ID" AssociatedFilter="ID" IdentifierName="CustomerID" />
+            </Parameter>
+            <Parameter Direction="Return"
+              TypeReflectorTypeName=
+   "Microsoft.Office.Server.ApplicationRegistry.SystemSpecific.Db.DbTypeReflector"
+   Name="Customer">
+              <TypeDescriptor TypeName="System.Data.IDataReader, System.Data,
+              Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+              IsCollection="true" Name="CustomerDataReader">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="System.Data.IDataRecord, System.Data,
+                     Version=2.0.0.0, Culture=neutral,
+                     PublicKeyToken=b77a5c561934e089" Name="CustomerDataRecord">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.Int32, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="ID"
+                        IdentifierName="CustomerID" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                      Version=2.0.0.0, Culture=neutral,
+                      PublicKeyToken=b77a5c561934e089" Name="FirstName" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="LastName" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="Title" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="Company" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="Address1" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="Address2" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="City" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                          PublicKeyToken=b77a5c561934e089" Name="State" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                          PublicKeyToken=b77a5c561934e089" Name="Zip" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="Phone" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="Fax" />
+                      <TypeDescriptor TypeName="System.String, mscorlib,
+                        Version=2.0.0.0, Culture=neutral,
+                        PublicKeyToken=b77a5c561934e089" Name="EMail" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+
+          <MethodInstances>
+            <MethodInstance Type="SpecificFinder" ReturnParameterName="Customer"
+              ReturnTypeDescriptorName="CustomerDataReader"
+              ReturnTypeDescriptorLevel="0" Name="FindCustomerInstance" />
+          </MethodInstances>
+
+        </Method>
+
+<Method Name="CustomerIDEnumerator">
+  <Properties>
+    <Property Name="RdbCommandText" Type="System.String">
+      SELECT ID FROM Names</Property>
+    <Property Name="RdbCommandType" Type="System.String">Text</Property>
+  </Properties>
+  <Parameters>
+    <Parameter Name="CustomerIDs" Direction="Return">
+		<TypeDescriptor TypeName="System.Data.IDataReader, System.Data,
+              Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+				IsCollection="true" Name="CustomerDataReader">
+        <TypeDescriptors>
+			<TypeDescriptor TypeName="System.Data.IDataRecord, System.Data,
+                    Version=2.0.0.0, Culture=neutral,
+                    PublicKeyToken=b77a5c561934e089" Name="CustomerDataRecord">
+            <TypeDescriptors>
+              <TypeDescriptor TypeName="System.Int32"
+                IdentifierName="CustomerID" Name="ID">
+                <LocalizedDisplayNames>
+                  <LocalizedDisplayName LCID="1033">ID</LocalizedDisplayName>
+                </LocalizedDisplayNames>
+              </TypeDescriptor>
+            </TypeDescriptors>
+          </TypeDescriptor>
+        </TypeDescriptors>
+      </TypeDescriptor>
+    </Parameter>
+  </Parameters>
+  <MethodInstances>
+    <MethodInstance Name="CustomerIDEnumeratorInstance"
+      Type="IdEnumerator" ReturnParameterName="CustomerIDs" />
+  </MethodInstances>
+</Method>
+
+
+      </Methods>
+    </Entity>
+  </Entities>
+</LobSystem>

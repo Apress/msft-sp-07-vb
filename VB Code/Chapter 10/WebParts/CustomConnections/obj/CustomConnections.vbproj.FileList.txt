@@ -1,0 +1,9 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CustomConnections.Resources.resources
+obj\Debug\CustomConnections.vbproj.GenerateResource.Cache
+bin\Debug\CustomConnections.dll
+bin\Debug\CustomConnections.pdb
+bin\Debug\CustomConnections.xml
+obj\Debug\CustomConnections.dll
+obj\Debug\CustomConnections.xml
+obj\Debug\CustomConnections.pdb

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/"
+		 Id="7B636574-FF78-4103-9791-879614CF6D1D"
+		 Scope="Farm"
+		 Title="Unified Logging Service (ULS) viewer"
+		 Description="Allows you to view ULS logs" 
+		 >
+	<ElementManifests>
+		<ElementManifest Location="Elements.xml" />
+	</ElementManifests>
+</Feature>

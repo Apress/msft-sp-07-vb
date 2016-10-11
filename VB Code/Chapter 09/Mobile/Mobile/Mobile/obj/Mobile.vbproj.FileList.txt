@@ -1,0 +1,9 @@
+bin\Debug\Mobile.dll
+bin\Debug\Mobile.pdb
+bin\Debug\Mobile.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Mobile.Resources.resources
+obj\Debug\Mobile.vbproj.GenerateResource.Cache
+obj\Debug\Mobile.dll
+obj\Debug\Mobile.xml
+obj\Debug\Mobile.pdb

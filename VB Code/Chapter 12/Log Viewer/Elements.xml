@@ -1,0 +1,16 @@
+﻿<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<CustomActionGroup
+	Id="BDDBB947-CBC6-47f7-B57A-6C8BEB0E19D7"
+	Location="Microsoft.SharePoint.Administration.Operations"
+	Title="Utilities"
+	Sequence="1000"/>
+	<CustomAction 
+		Id="E57ECD33-91FD-4fc3-A4E8-E1B932178CB4"
+		GroupId="BDDBB947-CBC6-47f7-B57A-6C8BEB0E19D7" 
+		Location="Microsoft.SharePoint.Administration.Operations"
+		Sequence="10"
+		Title="View Unified Logging Service"
+		Description="Displays Unified Logging Service (ULS) logs.">
+		<UrlAction Url="_admin/ULSLogViewer.aspx"/>
+	</CustomAction>
+</Elements>

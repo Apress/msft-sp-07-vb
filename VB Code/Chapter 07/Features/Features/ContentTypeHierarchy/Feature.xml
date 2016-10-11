@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/"
+  Id="2D9921AE-D263-4e2b-B4F7-ABDD6223C8B0"
+  Scope="Site"
+  Title="Content Type Hierarchy"
+  Description="Shows the hierarchical relationship between content types." 
+  >
+	<ElementManifests>
+		<ElementManifest Location="Elements.xml" />
+	</ElementManifests>
+</Feature>

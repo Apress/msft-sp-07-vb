@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkflowInfo>
+  <Actions Sequential="then" Parallel="and">
+    <Action Name="Log an Event" ClassName="CustomActivities.LogActivity"
+     Assembly="CustomActivities, Version=1.0.0.0, Culture=neutral,
+     PublicKeyToken=bfd5610928a0e6b5" AppliesTo="all" Category="Logging">
+      <Parameters>
+        <Parameter Name="Message" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="LogName" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="EntryType" Type="System.String, mscorlib" Direction="In" />
+      </Parameters>
+      <RuleDesigner Sentence="Log %1 in %2 as %3">
+        <FieldBind  Id="1" Field="Message"
+         DesignerType="TextArea" Text="this message"/>
+        <FieldBind  Id="2" Field="LogName"
+        DesignerType="TextArea" Text="this log"/>
+        <FieldBind  Id="3" Field="EntryType"
+        DesignerType="DropDown" Text="this event type">
+          <Option Name="Information" Value="Information"/>
+          <Option Name="Success" Value="Success"/>
+          <Option Name="Warning" Value="Warning"/>
+          <Option Name="Error" Value="Error"/>
+          <Option Name="Failure" Value="Failure"/>
+        </FieldBind>
+      </RuleDesigner>
+    </Action>
+  </Actions>
+</WorkflowInfo>

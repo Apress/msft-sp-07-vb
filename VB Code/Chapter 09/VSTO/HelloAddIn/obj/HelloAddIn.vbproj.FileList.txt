@@ -1,0 +1,10 @@
+bin\Debug\HelloAddIn.dll
+bin\Debug\HelloAddIn.pdb
+bin\Debug\HelloAddIn.dll.manifest
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\HelloAddIn.vbproj.ResolveComReference.cache
+obj\Debug\HelloAddIn.MyAddInsTab.xml
+obj\Debug\HelloAddIn.Resources.resources
+obj\Debug\HelloAddIn.vbproj.GenerateResource.Cache
+obj\Debug\HelloAddIn.dll
+obj\Debug\HelloAddIn.pdb

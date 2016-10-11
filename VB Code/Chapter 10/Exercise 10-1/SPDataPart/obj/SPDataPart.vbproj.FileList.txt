@@ -1,0 +1,9 @@
+bin\Debug\SPDataPart.dll
+bin\Debug\SPDataPart.pdb
+bin\Debug\SPDataPart.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SPDataPart.Resources.resources
+obj\Debug\SPDataPart.vbproj.GenerateResource.Cache
+obj\Debug\SPDataPart.dll
+obj\Debug\SPDataPart.xml
+obj\Debug\SPDataPart.pdb

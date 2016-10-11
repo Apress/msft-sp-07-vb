@@ -1,0 +1,5 @@
+﻿<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="MinimalMaster" List="116" Url="_catalogs/masterpage">
+		<File Url="minimal.master" Type="GhostableInLibrary"/>
+	</Module>
+</Elements>

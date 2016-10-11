@@ -1,0 +1,9 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Hello.Resources.resources
+obj\Debug\Hello.vbproj.GenerateResource.Cache
+bin\Debug\Hello.dll
+bin\Debug\Hello.pdb
+bin\Debug\Hello.xml
+obj\Debug\Hello.dll
+obj\Debug\Hello.xml
+obj\Debug\Hello.pdb

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/"
+  Id="986F7A65-89E2-4e1b-AB4D-2E683B3E5F82"
+  Scope="Web"
+  Title="Internal Announcement"
+  Description="Adds a disclaimer to announcment body." 
+  >
+	<ElementManifests>
+		<ElementManifest Location="Elements.xml" />
+	</ElementManifests>
+</Feature>

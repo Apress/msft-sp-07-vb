@@ -1,0 +1,9 @@
+bin\Debug\WordCleaner.dll
+bin\Debug\WordCleaner.pdb
+bin\Debug\WordCleaner.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\WordCleaner.Resources.resources
+obj\Debug\WordCleaner.vbproj.GenerateResource.Cache
+obj\Debug\WordCleaner.dll
+obj\Debug\WordCleaner.xml
+obj\Debug\WordCleaner.pdb

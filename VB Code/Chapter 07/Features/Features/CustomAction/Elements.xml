@@ -1,0 +1,12 @@
+﻿<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<CustomAction 
+		Id=" 175B270F-239E-4955-97CB-94227E5DAA17"
+		GroupId="SiteActions"
+		Location="Microsoft.SharePoint.StandardMenu"
+		Sequence="1000"
+		Title="Download Book Code"
+		Description="This action takes you to the Apress code download page."
+		ImageUrl="_layouts/images/addtofavorites.gif">
+		<UrlAction Url="http://www.apress.com/book/download.html"/>
+	</CustomAction>
+</Elements>

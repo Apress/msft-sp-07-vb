@@ -1,0 +1,71 @@
+<%@ Master language="VB" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Register Tagprefix="SPSWC" Namespace="Microsoft.SharePoint.Portal.WebControls" Assembly="Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="PublishingWebControls" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="PublishingNavigation" Namespace="Microsoft.SharePoint.Publishing.Navigation" Assembly="Microsoft.SharePoint.Publishing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="wssuc" TagName="Welcome" src="~/_controltemplates/Welcome.ascx" %>
+<%@ Register TagPrefix="wssuc" TagName="DesignModeConsole" src="~/_controltemplates/DesignModeConsole.ascx" %>
+<%@ Register TagPrefix="PublishingVariations" TagName="VariationsLabelMenu" src="~/_controltemplates/VariationsLabelMenu.ascx" %>
+<%@ Register Tagprefix="PublishingConsole" TagName="Console" src="~/_controltemplates/PublishingConsole.ascx" %>
+<%@ Register TagPrefix="PublishingSiteAction" TagName="SiteActionMenu" src="~/_controltemplates/PublishingActionMenu.ascx" %>
+
+<html>
+<WebPartPages:SPWebPartManager runat="server"/>
+<SharePoint:RobotsMetaTag runat="server"/>
+
+
+<head runat="server">
+<asp:ContentPlaceHolder runat="server" id="head">
+<title>
+<asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server" />
+</title>
+</asp:ContentPlaceHolder>
+<Sharepoint:CssLink runat="server"/>
+<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server" />
+</head>
+
+
+<body onload="javascript:_spBodyOnLoadWrapper();">
+
+<form runat="server" onsubmit="return _spFormOnSubmitWrapper();">
+
+  <table border="0">
+    <tr>
+      <td><asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea"  runat="server"/></td>
+      <td><wssuc:Welcome id="explitLogout" runat="server"/></td>
+      <td><PublishingSiteAction:SiteActionMenu runat="server"/></td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <PublishingWebControls:AuthoringContainer id="authoringcontrols" runat="server">
+          <PublishingConsole:Console runat="server" />
+        </PublishingWebControls:AuthoringContainer>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <br/>
+        <asp:ContentPlaceHolder id="PlaceHolderMain" runat="server" />
+        <p><asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server"/></p>
+        <p><asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" runat="server"/></p>
+        <p><asp:ContentPlaceHolder ID="PlaceHolderPageImage" runat="server"/></p>
+        <p><asp:ContentPlaceHolder ID="PlaceHolderBodyLeftBorder" runat="server"/></p>
+        <p><asp:ContentPlaceHolder ID="PlaceHolderNavSpacer" runat="server"/></p>
+        <p><asp:ContentPlaceHolder ID="PlaceHolderTitleLeftBorder" runat="server"/></p>
+        <p><asp:ContentPlaceHolder ID="PlaceHolderTitleAreaSeparator" runat="server"/></p>
+        <p><asp:ContentPlaceHolder ID="PlaceHolderMiniConsole" runat="server"/></p>
+        <p><asp:ContentPlaceHolder id="PlaceHolderCalendarNavigator" runat ="server" /></p>
+        <p><asp:ContentPlaceHolder id="PlaceHolderLeftActions" runat ="server"/></p>
+        <p><asp:ContentPlaceHolder id="PlaceHolderPageDescription" runat ="server"/></p>
+        <p><asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" runat ="server"/></p>
+        <p><asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" runat ="server"/></p>
+      </td>
+    </tr>
+  </table>
+
+</form>
+</body>
+</html>

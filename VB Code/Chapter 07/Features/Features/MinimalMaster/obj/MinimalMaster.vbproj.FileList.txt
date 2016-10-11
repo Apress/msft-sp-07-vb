@@ -1,0 +1,11 @@
+bin\Debug\MinimalMaster.dll
+bin\Debug\MinimalMaster.pdb
+bin\Debug\MinimalMaster.xml
+bin\Debug\Microsoft.SharePoint.Search.dll
+bin\Debug\Microsoft.SharePoint.Search.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\MinimalMaster.Resources.resources
+obj\Debug\MinimalMaster.vbproj.GenerateResource.Cache
+obj\Debug\MinimalMaster.dll
+obj\Debug\MinimalMaster.xml
+obj\Debug\MinimalMaster.pdb

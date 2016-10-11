@@ -1,0 +1,11 @@
+﻿<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<CustomAction 
+		Id="BB51DC63-6C7B-4772-9D03-933FF3761140"
+		GroupId="Galleries"
+		Location="Microsoft.SharePoint.SiteSettings"
+		Sequence="0"
+		Title="Site Content Types Hierarchy"
+		Description="Displays a hierarchy of content types.">
+		<UrlAction Url="_layouts/ContentTypeHierarchy.aspx"/>
+	</CustomAction>
+</Elements>

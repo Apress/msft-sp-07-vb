@@ -1,0 +1,26 @@
+<connectionStrings>
+  <add name="DBService"
+  connectionString="Server=VSSQL;Database=aspnetdb;Integrated Security=SSPI;"
+  providerName="System.Data.SqlClient" /> />
+</connectionStrings>
+<system.web>
+  <membership defaultProvider="DB">
+    <providers>
+      <add connectionStringName="DBService"
+        enablePasswordRetrieval="false"
+        enablePasswordReset="true"
+        requiresQuestionAndAnswer="true"
+        applicationName="/"
+        requiresUniqueEmail="false"
+        minRequiredPasswordLength="1"
+        minRequiredNonalphanumericCharacters="0"
+        passwordFormat="Clear"
+        maxInvalidPasswordAttempts="5"
+        passwordAttemptWindow="10"
+        passwordStrengthRegularExpression=""
+        name="DB"
+        type="System.Web.Security.SqlMembershipProvider,~CCC
+          System.Web, Version=2.0.0.0, Culture=neutral,~CCC
+          PublicKeyToken=b03f5f7f11d50a3a" />
+    </providers>
+  </membership>

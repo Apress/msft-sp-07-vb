@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/"
+  Id="142C1ADB-C56E-4fa2-AC5E-C947390BE659"
+  Scope="Web"
+  Title="Minimal Master Page"
+  Description="Sets the master page to minimal.master." 
+  ActivateOnDefault="false"
+  AlwaysForceInstall="true"
+  Version="1.0.0.0" 
+  ReceiverAssembly="MinimalMaster, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8c9fc716f38d08b2"
+  ReceiverClass="MinimalMaster.Receiver"
+  >
+	<ElementManifests>
+		<ElementManifest Location="Elements.xml" />
+	</ElementManifests>
+</Feature>

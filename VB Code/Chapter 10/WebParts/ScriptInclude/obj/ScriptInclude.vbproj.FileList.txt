@@ -1,0 +1,9 @@
+bin\Debug\ScriptInclude.dll
+bin\Debug\ScriptInclude.pdb
+bin\Debug\ScriptInclude.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ScriptInclude.Resources.resources
+obj\Debug\ScriptInclude.vbproj.GenerateResource.Cache
+obj\Debug\ScriptInclude.dll
+obj\Debug\ScriptInclude.xml
+obj\Debug\ScriptInclude.pdb
